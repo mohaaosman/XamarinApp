@@ -10,7 +10,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            MainPage = new XamarinControls1();
+            MainPage = new XamarinControls2();
         }
 
         protected override void OnStart()

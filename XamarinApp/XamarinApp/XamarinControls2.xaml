@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinApp.XamarinControls2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="30">
+                <!--<Label Text="From URL" />
+                <Image x:Name="imageholder"
+                       WidthRequest="400" 
+                       HorizontalOptions="CenterAndExpand"
+                       HeightRequest="400"/>-->
+
+                <Frame BackgroundColor="Beige" CornerRadius="20" Padding="10,20,50,30" BorderColor="Red" HasShadow="True" >
+                    <StackLayout BackgroundColor="Blue" Margin="10,20,50,30">
+                        <Label Text="Name" />
+                        <Label Text="Address" />
+                    </StackLayout>
+                </Frame>
+
+            <Slider Minimum="0" Maximum="1" />
+            <SearchBar Placeholder="Search"  />
+                
+                <ProgressBar x:Name="progress" Progress="0" />
+                <Stepper Minimum="0" Maximum="10" Increment="1" PropertyChanged="Stepper_PropertyChanged" />
+                <Frame BackgroundColor="Beige" Padding="0"  BorderColor="Red" CornerRadius="100" HasShadow="True" >
+                    <StackLayout
+                        >
+                        <Image Source="Assets/car.png" HeightRequest="100" WidthRequest="100" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Name" />
+                <Entry x:Name="username" Placeholder="Name" />
+                <Label Text="Description" />
+                <Editor Placeholder="Description" HeightRequest="200" />
+                <Button Text="Save User" Clicked="Button_Clicked"/>
+                <Label Text="Users" />
+                <Picker x:Name="users"  ></Picker>
+                <ListView x:Name="userslist">
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>mono</x:String>
+                            <x:String>monodroid</x:String>
+                            <x:String>monotouch</x:String>
+                            <x:String>monorail</x:String>
+                            <x:String>monodevelop</x:String>
+                            <x:String>monotone</x:String>
+                            <x:String>monopoly</x:String>
+                            <x:String>monomodal</x:String>
+                            <x:String>mononucleosis</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
