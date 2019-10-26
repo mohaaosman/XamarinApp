@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinApp.XamarinControls1">
+    <ContentPage.Content>
+        <ScrollView >
+             <StackLayout>
+            <Image x:Name="imageholder" Source="Assets/car.png" HeightRequest="200" WidthRequest="200" />
+
+
+
+            <DatePicker x:Name="date"  />
+            <Label x:Name="showdate" />
+           
+
+            <TimePicker x:Name="time"   />
+            <Label x:Name="showtime" />
+            <Label Text="Is Day Time" />
+            <Switch x:Name="daytime" IsToggled="false" 
+PropertyChanged="daytime_PropertyChanged"   
+                    HorizontalOptions="Start"  />
+
+            <Label x:Name="showisday" IsVisible="False" />
+            <Label Text="Over 18" />
+
+            <CheckBox x:Name="age" PropertyChanged="age_PropertyChanged"  />
+
+            <Label Text="Graduated" />
+
+            <CheckBox x:Name="gr" PropertyChanged="gr_PropertyChanged"  />
+
+            <Picker x:Name="cer" SelectedIndex="1" SelectedIndexChanged="cer_SelectedIndexChanged" />
+
+
+
+            <Label x:Name="pickeritem" />
+            <Button x:Name="submit" Clicked="Button_Clicked" Text="Get Date and time" IsEnabled="False" />
+
+
+            <Editor />
+
+            <Frame BackgroundColor="SteelBlue" HasShadow="True" Padding="15" >
+               
+            </Frame>
+
+        </StackLayout>
+        </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>

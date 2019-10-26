@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinApp.MainPage">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Row="0" Grid.ColumnSpan="5" BackgroundColor="SteelBlue" Orientation="Horizontal">
+            <Label Text="Menu" TextColor="White" FontSize="50" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"/>
+            <Label Text="Sub Menu " FontSize="40" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" BackgroundColor="Yellow" Grid.Column="0" >
+            
+        </StackLayout><StackLayout Grid.Row="1" BackgroundColor="Yellow" Grid.Column="1" >
+            
+        </StackLayout><StackLayout Grid.Row="1" BackgroundColor="Yellow" Grid.Column="2" >
+            
+        </StackLayout><StackLayout Grid.Row="1" BackgroundColor="Yellow" Grid.Column="3" >
+            
+        </StackLayout><StackLayout Grid.Row="1" BackgroundColor="Yellow" Grid.Column="4" >
+            
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" BackgroundColor="Yellow" Grid.Column="0" >
+
+        </StackLayout>
+        <StackLayout Grid.Row="2" BackgroundColor="Yellow" Grid.Column="1" >
+
+        </StackLayout>
+        <StackLayout Grid.Row="2" BackgroundColor="Yellow" Grid.Column="2" >
+
+        </StackLayout>
+        <StackLayout Grid.Row="2" BackgroundColor="Yellow" Grid.Column="3" >
+
+        </StackLayout>
+        <StackLayout Grid.Row="2" BackgroundColor="Yellow" Grid.Column="4" >
+
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" BackgroundColor="Yellow" Grid.ColumnSpan="2" >
+
+        </StackLayout>
+        <StackLayout Grid.Row="3" BackgroundColor="Yellow" Grid.Column="2" >
+
+        </StackLayout>
+        <StackLayout Grid.Row="3" BackgroundColor="Yellow" Grid.Column="3" Grid.ColumnSpan="2" >
+
+        </StackLayout>
+
+        <StackLayout Grid.Row="4" Grid.RowSpan="2" BackgroundColor="Yellow" Grid.Column="3" Grid.ColumnSpan="2" >
+
+        </StackLayout>
+
+
+    </Grid>
+</ContentPage>
