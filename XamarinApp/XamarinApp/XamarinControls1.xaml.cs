@@ -99,5 +99,10 @@ namespace XamarinApp
 
             pickeritem.Text = item;
         }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
