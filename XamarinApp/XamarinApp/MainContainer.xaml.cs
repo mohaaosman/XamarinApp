@@ -52,5 +52,23 @@ namespace XamarinApp
         {
             await Navigation.PushAsync(new CRPage());
         }
+
+        private async void Button_Clicked_6(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new WebViewPage());
+
+        }
+
+        private async void Button_Clicked_7(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MDPage());
+
+        }
+
+        private async void Button_Clicked_8(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PopUpPage());
+
+        }
     }
 }

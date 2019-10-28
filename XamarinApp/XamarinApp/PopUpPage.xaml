@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinApp.PopUpPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid BackgroundColor="Blue">
+                <StackLayout HeightRequest="400" WidthRequest="400">
+                    <Button Text="Open PopUp" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Button_Clicked" />
+                </StackLayout>
+
+            </Grid>
+
+            <Grid x:Name="popup" Padding="200" IsVisible="False"  BackgroundColor="#99ffffff">
+                
+                <StackLayout HeightRequest="400" WidthRequest="400" 
+                             
+                             BackgroundColor="White"> 
+                        <Button Text="Cancel" Clicked="Button_Clicked_1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
